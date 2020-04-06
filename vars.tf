@@ -24,3 +24,8 @@ variable "eks_cluster_name" {
   type        = string
   description = "EKS cluster name where external-dns resides"
 }
+
+variable "hosted_zone_ids" {
+  type = list(string)
+  description = "List of hosted zone ids"
+}
